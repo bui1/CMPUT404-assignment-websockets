@@ -52,8 +52,22 @@
           lineWidth = 3;
           var x = entity["x"];
           var y = entity["y"];
-          //moveTo(x,y);
-          fillStyle = entity["colour"];
+
+          innerRadius = 5;
+          outerRadius = 15;
+
+          var gradient = context.createRadialGradient(
+            x,
+            y,
+            innerRadius,
+            x,
+            y,
+            outerRadius
+          );
+          gradient.addColorStop(0, "white");
+          gradient.addColorStop(1, entity["colour"]);
+
+          fillStyle = gradient;
           strokeStyle = fillStyle;
           arc(
             x,
@@ -63,6 +77,8 @@
             2.0 * Math.PI,
             false
           );
+
+          fill();
           stroke();
         }
       }
@@ -239,15 +255,15 @@
       // Add the application specific mouse listeners!
       //XXX: TODO Make these prettier!
       mouse.mousedowners.push(function (x, y, clicked, e) {
-        addEntityWithoutName({ x: x, y: y, colour: "blue" });
+        addEntityWithoutName({ x: x, y: y, colour: "#F8B195", radius: 20 });
       });
 
       mouse.mouseuppers.push(function (x, y, clicked, e) {
-        addEntityWithoutName({ x: x, y: y, colour: "red" });
+        addEntityWithoutName({ x: x, y: y, colour: "#F67280", radius: 20 });
       });
 
       mouse.mousedraggers.push(function (x, y, clicked, e) {
-        addEntityWithoutName({ x: x, y: y, colour: "green", radius: 10 });
+        addEntityWithoutName({ x: x, y: y, colour: "#64B6AC", radius: 10 });
       });
 
       function update() {

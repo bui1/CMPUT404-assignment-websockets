@@ -59,7 +59,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 # References
 
-myWorld clear, get_entity, world, update, hello borrowed functions from previous assignment
+myWorld clear, get_entity, world, update, hello borrowed functions from previous CMPUT 404 ajax assignment
 
 - From [CMPUT 404 AJAX Assignment](https://github.com/bui1/CMPUT404-assignment-ajax/blob/master/server.py)
 - From [bui1](https://github.com/bui1)
@@ -77,3 +77,20 @@ Canva Circle Gradient (also used in previous CMPUT 404 AJAX Assignment)
 
 - From [StackOverflow](https://stackoverflow.com/questions/16494262/how-to-draw-a-circle-with-centered-fadeing-out-gradients-with-html5-canvas/16494384#16494384)
 - From [Raymond Zhou](https://stackoverflow.com/users/2371813/raymond-zhou)
+
+- From [CMPUT 404 AJAX Assignment](https://github.com/bui1/CMPUT404-assignment-ajax/blob/master/static/index.html)
+- From [bui1](https://github.com/bui1)
+
+Fixing Template Not Found Flask Error
+
+- From [StackOverflow](https://stackoverflow.com/a/23327352)
+- From [Martijn Pieters](https://stackoverflow.com/users/100297/martijn-pieters)
+
+Return JSON Flask Response
+
+- From [StackOverflow](https://stackoverflow.com/a/26961568)
+- From [scls](https://stackoverflow.com/users/1609077/scls)
+
+Canva Fill Shape
+
+- From [W3 Schools](https://www.w3schools.com/tags/canvas_fill.asp)
