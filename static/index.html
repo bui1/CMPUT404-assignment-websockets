@@ -279,7 +279,9 @@
               return response.json();
             })
             .then((jsonResponse) => {
-              world = jsonResponse;
+              for (let [key, value] of Object.entries(jsonResponse)) {
+                world[key] = value;
+              }
             })
             .catch((error) => {
               debug("WebSocket Error:" + error);
@@ -290,7 +292,7 @@
         };
         socket.onmessage = function (msg) {
           try {
-            debug("WebSocket Recv:" + msg.data);
+            //debug("WebSocket Recv:" + msg.data);
             //XXX: TODO What are you going to do here?
             const response = JSON.parse(msg.data);
 
